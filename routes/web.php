@@ -16,9 +16,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+//Todas las rutas que van debajo de Auth::routes(); son rutas que están autentificadas
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('perfil', 'PerfilUser@index')->name('perfil');

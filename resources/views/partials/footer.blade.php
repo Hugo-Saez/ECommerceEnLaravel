@@ -22,7 +22,7 @@
         <div class="wrapper-footer2">
           <div class="row">
             <div class="col-md-3">
-                <h5><a class="sub">INFORMATION</a></h5>
+                <h5><a class="underlined">INFORMATION</a></h5>
                 <br>
                 <a href="#" style="color:white"><h6>ABOUT US</h6></a>
                 <a href="#" style="color:white"><h6>CONTACT US</h6></a>
@@ -33,7 +33,7 @@
                 <a href="#" style="color:white"><h6>RETURNS</h6></a>
             </div>
             <div class="col-md-3">
-                <h5><a class="sub">MY ACOUNT</a></h5>
+                <h5><a class="underlined">MY ACOUNT</a></h5>
                 <br>
                 <a href="#" style="color:white"><h6>MY ACOUNT</h6></a>
                 <a href="#" style="color:white"><h6>WISH LIST</h6></a>
@@ -44,13 +44,13 @@
                 <a href="#" style="color:white"><h6>SECURE PAYMENT</h6></a>
             </div>
             <div class="col-md-3">
-                <h5><a class="sub">I WANT...</a></h5>
+                <h5><a class="underlined">I WANT...</a></h5>
                 <br>
                 <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
                 <textarea rows="5" cols="30" placeholder="I want..."></textarea>
             </div>
             <div class="col-md-3">
-                <h5><a class="sub">GET IN TOUCH</a></h5>
+                <h5><a class="underlined">GET IN TOUCH</a></h5>
                 <br>
                 <h6>Phone: 1-000-000</h6>
                 <a href="#" style="color:white"><h6>Email: info@gafasgeek.com</h6></a>
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="wrapper-footer3">
-            <div class="row-tartjetas">
+            <div class="row-payment">
               <div class="col-md-3 col-md-offset-3">
                 <img src="/images/paypal.jpg" width=40 height=25>
                 <img src="/images/american-express.jpg" width=40 height=25>

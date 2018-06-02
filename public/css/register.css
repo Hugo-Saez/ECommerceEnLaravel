@@ -1,0 +1,11 @@
+.btn-register,
+.btn-register:hover,
+.btn-register:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f32a0e;
+}
+
+.btn-register:hover {
+  filter: opacity(0.5);
+}

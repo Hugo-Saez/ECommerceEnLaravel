@@ -1,0 +1,76 @@
+.wrapper-home1{
+  padding:20px 0px;
+  padding-left: 100px;
+}
+
+.wrapper-home2{
+  padding:20px 0px;
+  padding-left: 35px;
+  padding-right: 20px;
+}
+
+.wrapper-home3{
+  padding:20px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-home,
+.btn-home:hover,
+.btn-home:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f32a0e;
+}
+
+.btn-home:hover {
+  filter: opacity(0.5);
+}
+
+.btn-home{
+  width: 457px;
+  height: 70px;
+}
+
+.frame{
+  width: 250px;
+  height: 250px;
+  border: 12px solid lightgrey;
+}
+
+.stars{
+  width: 150px;
+  height: 25px;
+}
+
+.home{
+  background-color:#f4f0f0;
+}
+
+.card{
+  border: 20px solid lightgrey;
+  padding:15px 15px;
+}
+
+.card-deck{
+  padding:25px 15px;
+}
+
+.card-body{
+  align-self: center;
+}
+
+.btn-buy{
+  font-family: Indie Flower;
+  color: black;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+.central-image{
+  width: 400px;
+  height: 350px;
+  padding-left: 400px;
+  background-color: white ;
+  background: opacity;
+}
