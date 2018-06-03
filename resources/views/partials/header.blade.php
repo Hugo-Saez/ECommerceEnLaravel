@@ -20,9 +20,7 @@
       Hazte Premium <img class="logo-circle" src="images/logo-circulo.png"></img>
     </div>
     @if (Route::has('login'))
-        <div class="top-right links">
             @auth
-            <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
@@ -38,7 +36,6 @@
                         @csrf
                     </form>
                 </div>
-            </li>
             @else
             <div class="col-md-1">
               Login <a href="{{ route('login') }}"><i class="logo menu-astronaut fas fa-user-astronaut fa-2x"></i></a>
@@ -47,7 +44,6 @@
               Registro <a href="{{ route('register') }}"><i class="logo menu-astronaut fas fa-user fa-2x"></i></a>
             </div>
             @endauth
-        </div>
     @endif
 
     <div class="col-md-2">
