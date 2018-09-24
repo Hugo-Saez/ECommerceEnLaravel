@@ -1,6 +1,7 @@
 
 @extends('layout')
 @section('content')
+
 <div class="container-fluid home">
   <div class="wrapper-home1">
     <div class="row">
@@ -40,90 +41,21 @@
 
   <div class="wrapper-home3">
     <div class="row">
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 1</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
+      @foreach ($glasses as $glass)
+        <div class="col-md-4">
+          <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top frame" src="{{ $glass->url_imagen }}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ $glass->marca }}</h5>
+                <h4 class="card-text" align="center">{{ $glass->precio }}$</h4>
+                <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
+                <img class="stars" src="images/stars.png">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa2.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 2</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 3</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa4.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 4</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa5.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 5</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-deck">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top frame" src="images/gafa6.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GAFAS GEEK 6</h5>
-              <h4 class="card-text" align="center">30$</h4>
-              <a href="#" class="btn btn-buy font-italic"><b>Recibelo ya</b></a><br>
-              <img class="stars" src="images/stars.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
+      @endforeach
     </div>
   </div>
 </div>

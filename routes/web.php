@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','HomeController@index')->name('/');
 
 Auth::routes();
 //Todas las rutas que van debajo de Auth::routes(); son rutas que están autentificadas
